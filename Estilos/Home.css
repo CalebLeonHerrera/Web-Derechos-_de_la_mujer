@@ -1,0 +1,273 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --heading: 'Montserrat', sans-serif;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background: #fff;
+}
+
+/* estilos globales */
+img{
+    width: 100%;
+}
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+hr{
+    width: 95vw;
+    margin: 0 auto;
+}
+
+/* header */
+.top-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #4e4376;
+    color: #fff;
+    padding: 20px 30px;
+}
+.top-head .fas{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.times-btn{
+    display: none;
+}
+
+.nav-bar{
+    background: #333;
+    height: 0;
+    overflow: hidden;
+}
+.show-nav{
+    height: auto;
+}
+.nav-bar ul li{
+    text-align: center;
+    display: block;
+    padding: 15px 0;
+    transition: all 1s ease-in-out;
+}
+.nav-bar ul li:hover{
+    background: #0e0e0e;
+}
+.nav-bar ul li a{
+    color: #fff;
+    text-transform: uppercase;
+}
+.nav-bar ul li a:hover{
+    text-decoration: underline;
+}
+
+/* social -icons */
+.social-icons{
+    display: none;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+    color: white;   
+    
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1{
+    max-width: 400px;
+}
+
+.colum1 h1{
+    font-size: 22px;
+}
+
+.colum1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+
+.colum2{
+    max-width: 400px;
+    
+}
+
+.colum2 h1{
+    font-size: 22px;
+}
+
+.row{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img{
+    width: 36px;
+    height: 36px;
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+
+.colum3{
+    max-width: 400px;
+}
+
+.colum3 h1{
+    font-size: 22px;
+}
+
+.row2{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.container-footer{
+    width: 100%;  
+    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+}
+
+.copyright{
+    color: #C7C7C7;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+@media screen and (max-width: 1100px){
+    
+    .container-body{
+        flex-wrap: wrap;
+    }
+    
+    .colum1{
+        max-width: 100%;
+    }
+    
+    .colum2,
+    .colum3{
+        margin-top: 40px;
+    }
+}
+@media(min-width: 800px){
+    /* nav */
+    .ham-btn, .times-btn{
+        display: none!important;
+    }
+
+    .navigation-container{
+        display: flex;
+        background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .top-head{
+        flex: 0 0 15%;
+    }
+
+    .nav-bar{
+        flex: 1 0 auto;
+        height: 100%;
+        background: transparent;
+    }
+
+    .nav-bar nav ul{
+        display: flex;
+        justify-content: center;
+    }
+    .nav-bar nav ul li{
+        padding-right: 30px;
+    }
+
+    .nav-bar nav ul li:hover{
+        background: none;
+    }
+
+    /* social icons */
+    .social-icons{
+        flex: 0 1 30%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .social-icons .fab{
+        color: #fff;
+        font-size: 2rem;
+    }
+    .social-icons ul{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    .social-icons ul li{
+        padding: 20px;
+    }
+
+    .footer-container{
+        display: flex;
+    }
+
+    .footer-right,
+    .footer-left{
+        flex: 1;
+    }
+}
